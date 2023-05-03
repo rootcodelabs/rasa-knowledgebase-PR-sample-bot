@@ -87,3 +87,12 @@ nlu:
       - City Hotel
       - Jugendherberge
       - Berlin Hotel
+
+  - synonym: restaurants
+      - restaurant
+      - resturant
+      - restuarants
+      - restuarant
+
+  - synonym: hotel
+      - hotels

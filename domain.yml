@@ -18,6 +18,8 @@ entities:
   - outside-seating
   - swimming-pool
   - star-rating
+  - free-wifi
+  - breakfast-included
 
 slots:
   object_type:
@@ -86,7 +88,19 @@ slots:
     mappings:
     - type: from_entity
       entity: star-rating
-
+  free-wifi:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: free-wifi 
+  breakfast-included:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: breakfast-included
+            
 actions:
   - action_query_knowledge_base
 

@@ -29,14 +29,15 @@ nlu:
       - list some [restaurants]{"entity": "object_type", "value": "restaurant"}
       - can you name some [restaurants]{"entity": "object_type", "value": "restaurant"} please?
       - can you show me some [restaurant]{"entity": "object_type", "value": "restaurant"} options
-      - list [German]{"entity": "cuisine"} [restaurants]{"entity": "object_type", "value": "restaurant"}
+      - list [German]{"entity": "cuisine", "value": "German"} [restaurants]{"entity": "object_type", "value": "restaurant"}
       - do you have any [mexican]{"entity": "cuisine"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
       - do you know the [price range]{"entity": "attribute", "value": "price-range"} of [that one]{"entity": "mention"}?
       - what [cuisine]{"entity": "attribute"} is [it]{"entity": "mention"}?
       - do you know what [cuisine]{"entity": "attribute"} the [last one]{"entity": "mention", "value": "LAST"} has?
       - does [Donath]{"entity": "restaurant"} have [outside seating]{"entity": "attribute", "value": "outside-seating"}?
+      - list some [outside seating]{"entity": "outside-seating", "value": "True"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
       - what is the [price range]{"entity": "attribute", "value": "price-range"} of [Berlin Burrito Company]{"entity": "restaurant"}?
-      - what is with [I due forni]{"entity": "restaurant"}?
+      - Does [Gong Gan]{"entity": "restaurant"} have [outside seating]{"entity": "attribute", "value": "outside-seating"}?
       - Do you also have any [Vietnamese]{"entity": "cuisine"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
       - What about any [Mexican]{"entity": "cuisine", "value": "mexican"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
       - Do you also know some [Italian]{"entity": "cuisine"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
@@ -54,20 +55,9 @@ nlu:
       - does the [first]{"entity": "mention", "value": "1"} one have [wifi]{"entity": "attribute", "value": "free-wifi"}?
       - does the [third]{"entity": "mention", "value": "3"} one have a [swimming pool]{"entity": "attribute", "value": "swimming-pool"}?
       - what is the [star rating]{"entity": "attribute", "value": "star-rating"} of [Berlin Wall Hostel]{"entity": "hotel"}?
-      - Does the [Hilton]{"entity": "hotel"} have a [swimming pool]{"entity": "attribute", "value": "swimming-pool"}?
-      - what is the [price range]{"entity": "attribute", "value": "price-range"} of [Berlin Burrito Company]{"entity": "restaurant"}?
-      - whats the [price range]{"entity": "attribute", "value": "price-range"} of [donath]{"entity": "restaurant"}?
-      - Can i know [price range]{"entity": "attribute", "value": "price-range"} of [I due forni]{"entity": "restaurant"}?
-      - The [price range]{"entity": "attribute", "value": "price-range"} of [Lụa Restaurant]{"entity": "restaurant"}?
-      - Can you tell me the [price range]{"entity": "attribute", "value": "price-range"} of [Pfefferberg]{"entity": "restaurant"}?
-      - provide me the [price range]{"entity": "attribute", "value": "price-range"} of [Marubi Ramen]{"entity": "restaurant"}?
-      - [price range]{"entity": "attribute", "value": "price-range"} of [Gong Gan]{"entity": "restaurant"}?
-      - what would be the [price range]{"entity": "attribute", "value": "price-range"} of [Hilton]{"entity": "hotel"}?
-      - give me the [price range]{"entity": "attribute", "value": "price-range"} of [B&B]{"entity": "hotel"}?
-      - retrieve the [price range]{"entity": "attribute", "value": "price-range"} of [City Hotel]{"entity": "hotel"}?
-      - [price range]{"entity": "attribute", "value": "price-range"} of [Berlin Wall Hostel]{"entity": "hotel"}?
-      - what is the [price range]{"entity": "attribute", "value": "price-range"} of [Jugendherberge]{"entity": "hotel"}?
-      - what is the [price range]{"entity": "attribute", "value": "price-range"} of [Berlin Hotel]{"entity": "hotel"}?
+      - Does [B&B]{"entity": "hotel"} have a [swimming pool]{"entity": "attribute", "value": "swimming-pool"}?
+      - does [Jugendherberge]{"entity": "hotel"} one offer [breakfast]{"entity": "attribute", "value": "breakfast-included"}?
+      - Is there [wifi]{"entity": "attribute", "value": "free-wifi"} in [City Hotel]{"entity": "hotel"}?
 
   - lookup: restaurant
     examples: |

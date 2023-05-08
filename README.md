@@ -36,7 +36,7 @@ To chat with the bot on the command line, run
 rasa shell
 ```
 
-## Sample queries and expected response
+## Sample user requests and expected bot response
 
 Here are few sample inputs and expected responses from the bot that works on this nlu data.
 
